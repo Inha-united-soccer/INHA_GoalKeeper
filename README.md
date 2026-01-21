@@ -36,7 +36,9 @@ When the ball enters a critical area, the goalkeeper performs a clearing action,
 If the ball position is lost, the robot combines head rotation and body rotation to obtain an omnidirectional field of view and re-locate the ball efficiently.
 
 The detailed system architecture is illustrated in the figure below.
-<img src="images/goalkeeper_bt.png" width="700" height="" />
+<p align="center">
+  <img src="images/goalkeeper_bt.png" width="700" />
+</p>
 
 ---
 
