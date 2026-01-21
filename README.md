@@ -13,35 +13,52 @@
 ---
 </div>
 
-Hi 👋 We are Inha-United !
-Inha-United is a team competing in the RoboCup Soccer Humanoid League.
+## Mission & Vision
+**"To create a soccer-playing intelligence that doesn't just calculate, but *understands* the flow of the game."**
 
-This repository focuses on algorithms and methodologies for goalkeeper behavior decision-making in autonomous humanoid soccer, based on the **BehaviorTree.CPP** framework.
+The **INHA Striker** is designed to bridge the gap between rigid robotic control and dynamic human intuition. By leveraging hierarchical behavior trees and advanced motion planning, our agent demonstrates adaptive gameplay—switching seamlessly between aggressive dribbling, tactical off-ball movement, and precision finishing.
 
-Starting from the demo provided by Booster Robotics, we have modularized the system, extended its functionality, and continuously improved its performance through our own research and development efforts.
+---
 
-## Decision-Making Framework
-The goalkeeper’s decision-making framework is composed of three high-level states: **Hold**, **Clearing**, and **Find**.
+## Key Features
 
-* **Hold**:
-In this state, the robot predicts the ball trajectory and continuously computes and moves to the optimal position that minimizes the opponent’s shooting angle.
+### **Cognitive Flexibility**
+Instead of simple if-else logic, we utilize a **Behavior Tree (BT)** architecture that allows for complex, reactive decision-making. The robot constantly evaluates the game state to transition between behaviors seamlessly.
+*   **Reactive**: Handles interruptions (e.g., sudden ball loss) gracefully.
+*   **Modular**: Easy to expand with new strategies or plays.
 
-* **Clearing**:
-When the ball enters a critical area, the goalkeeper performs a clearing action, kicking the ball away toward the direction opposite the goal.
+### **Fluid Agility**
+We move beyond linear paths. Our **Curvilinear Approach** algorithms allow the robot to:
+*   Approach the ball in smooth spirals rather than sharp turns.
+*   Maintain momentum while aligning for a kick.
+*   Execute **Swirl Maneuvers** to circle behind the ball naturally, mimicking human footwork.
 
-* **Find**:
-If the ball position is lost, the robot combines head rotation and body rotation to obtain an omnidirectional field of view and re-locate the ball efficiently.
+### **Tactical Intelligence**
+The striker knows where to be even when it doesn't have the ball.
+*   **Symmetry-based Positioning**: Exploits open space by calculating optimal gaps relative to defender positions.
+*   **Obstacle-Aware Dribbling**: Dynamically projects paths to find the safest route through a crowded defense.
 
-The detailed decision-making process is illustrated in the figure below.
+### **Precision & Power**
+*   **Kick Lock Mechanism**: Prevents action oscillation by committing to a shot once a high-confidence window is identified.
+*   **Adaptive Head Tracking**: Smoothes out sensor noise for stable vision while tracking high-speed balls.
+
+---
+
+## System Architecture
+
+The system is built on a robust perception-action loop:
 <img src="images/goalkeeper_bt.png" width="700" height="" />
 
-## Installation & Run
-```bash
-mkdir  ~/INHA_GoalKeeper
-git clone https://github.com/Inha-united-soccer/INHA_GoalKeeper.git
 
-# Build 
-./scripts/build.sh
+## Contribution
+This project contributes to the field of humanoid robotics by:
+1.  **Demonstrating Robust Autonomy**: Showing how behavior trees can handle the chaotic environment of a soccer match.
+2.  **Implementing Human-inspired Motion**: Proving that curvilinear paths are superior to linear point-to-point navigation for bipedal robots.
+3.  **Open Source Innovation**: Providing a modular, extensible C++ framework for future researchers in the RoboCup domain.
 
-# Start
-./scripts/start.sh
+---
+
+<div align="center">
+    <b>Built with by INHA United</b><br>
+    <i>Pushing the boundaries of Autonomous Soccer</i>
+</div>
