@@ -29,7 +29,7 @@ The detailed decision-making process is illustrated in the figure below.
 ## Installation & Run
 ```bash
 mkdir  ~/INHA_GoalKeeper
-git clone https://github.com/Eunbyeol-0/Soccer_Goalkeeper.git
+git clone https://github.com/Inha-united-soccer/INHA_GoalKeeper.git
 
 # Build 
 ./scripts/build.sh
