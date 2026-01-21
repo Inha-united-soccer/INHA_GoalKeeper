@@ -8,7 +8,7 @@
 [![BehaviorTree](https://img.shields.io/badge/BehaviorTree-V4-2ca02c.svg?style=for-the-badge)](https://www.behaviortree.dev/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-yellow.svg?style=for-the-badge)](LICENSE)
 
-*Dynamic Decision Making • Tactical Positioning • Human-like Agility*
+*Reactive Decision Making • Defensive Positioning • Shot-Blocking Agility*
 
 ---
 </div>
@@ -16,45 +16,27 @@
 ## Mission & Vision
 **"To create a soccer-playing intelligence that doesn't just calculate, but *understands* the flow of the game."**
 
-The **INHA Striker** is designed to bridge the gap between rigid robotic control and dynamic human intuition. By leveraging hierarchical behavior trees and advanced motion planning, our agent demonstrates adaptive gameplay—switching seamlessly between aggressive dribbling, tactical off-ball movement, and precision finishing.
-
----
-
-## Key Features
-
-### **Cognitive Flexibility**
-Instead of simple if-else logic, we utilize a **Behavior Tree (BT)** architecture that allows for complex, reactive decision-making. The robot constantly evaluates the game state to transition between behaviors seamlessly.
-*   **Reactive**: Handles interruptions (e.g., sudden ball loss) gracefully.
-*   **Modular**: Easy to expand with new strategies or plays.
-
-### **Fluid Agility**
-We move beyond linear paths. Our **Curvilinear Approach** algorithms allow the robot to:
-*   Approach the ball in smooth spirals rather than sharp turns.
-*   Maintain momentum while aligning for a kick.
-*   Execute **Swirl Maneuvers** to circle behind the ball naturally, mimicking human footwork.
-
-### **Tactical Intelligence**
-The striker knows where to be even when it doesn't have the ball.
-*   **Symmetry-based Positioning**: Exploits open space by calculating optimal gaps relative to defender positions.
-*   **Obstacle-Aware Dribbling**: Dynamically projects paths to find the safest route through a crowded defense.
-
-### **Precision & Power**
-*   **Kick Lock Mechanism**: Prevents action oscillation by committing to a shot once a high-confidence window is identified.
-*   **Adaptive Head Tracking**: Smoothes out sensor noise for stable vision while tracking high-speed balls.
+This repository focuses on algorithms and methodologies for goalkeeper behavior decision-making in autonomous humanoid soccer, based on the **BehaviorTree.CPP** framework.
+Behavior Trees provide a structured representation of complex behaviors and maintain a stable decision-making flow in real-time environments.
+Starting from the demo provided by Booster Robotics, we have modularized the system, extended its functionality, and continuously improved its performance through our own research and development efforts.
 
 ---
 
 ## System Architecture
 
-The system is built on a robust perception-action loop:
+The goalkeeper’s decision-making framework is composed of three high-level states: **Hold**, **Clearing**, and **Find**.
+
+* **Hold**:
+In this state, the robot predicts the ball trajectory and continuously computes and moves to the optimal position that minimizes the opponent’s shooting angle.
+
+* **Clearing**:
+When the ball enters a critical area, the goalkeeper performs a clearing action, kicking the ball away toward the direction opposite the goal.
+
+* **Find**:
+If the ball position is lost, the robot combines head rotation and body rotation to obtain an omnidirectional field of view and re-locate the ball efficiently.
+
+The detailed system architecture is illustrated in the figure below.
 <img src="images/goalkeeper_bt.png" width="700" height="" />
-
-
-## Contribution
-This project contributes to the field of humanoid robotics by:
-1.  **Demonstrating Robust Autonomy**: Showing how behavior trees can handle the chaotic environment of a soccer match.
-2.  **Implementing Human-inspired Motion**: Proving that curvilinear paths are superior to linear point-to-point navigation for bipedal robots.
-3.  **Open Source Innovation**: Providing a modular, extensible C++ framework for future researchers in the RoboCup domain.
 
 ---
 
