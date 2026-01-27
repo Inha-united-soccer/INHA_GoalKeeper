@@ -8,7 +8,7 @@
 [![BehaviorTree](https://img.shields.io/badge/BehaviorTree-V4-2ca02c.svg?style=for-the-badge)](https://www.behaviortree.dev/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-yellow.svg?style=for-the-badge)](LICENSE)
 
-*Reactive Decision Making • Defensive Positioning • Shot-Blocking Agility*
+*Cognitive Flexibility • Dynamic Positioning • Consistency and Safety*
 
 ---
 </div>
