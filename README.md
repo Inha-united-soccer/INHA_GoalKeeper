@@ -16,10 +16,27 @@
 ## Mission & Vision
 **"To create a soccer-playing intelligence that doesn't just calculate, but *understands* the flow of the game."**
 
-This repository focuses on algorithms and methodologies for goalkeeper behavior decision-making in autonomous humanoid soccer, based on the **BehaviorTree.CPP** framework.
-Behavior Trees provide a structured representation of complex behaviors and maintain a stable decision-making flow in real-time environments.
-Starting from the demo provided by Booster Robotics, we have modularized the system, extended its functionality, and continuously improved its performance through our own research and development efforts.
+The **INHA GoalKeeper** is designed to bridge the gap between rigid robotic control and dynamic human intuition. By leveraging hierarchical behavior trees and advanced motion planning, our agent demonstrates adaptive gameplay—ball-trajectory prediction–based positioning, proactive blocking and saving in 1v1 situations, and safe clearing in high-risk areas.
 
+---
+
+## Key Features
+
+### **Cognitive Flexibility**
+Instead of simple if-else logic, we utilize a **Behavior Tree (BT)** architecture that allows for complex, reactive decision-making. The robot constantly evaluates the game state to transition between behaviors seamlessly.
+*   **Reactive**: Handles interruptions (e.g., sudden ball loss) gracefully.
+*   **Modular**: Easy to expand with new strategies or plays.
+
+### **Dynamic Positioning**
+Rather than holding a fixed spot in front of the goal, the goalkeeper **optimizes its coverage angle and distance.**
+*   **Prediction-Based Adjustment**: Proactively adjusts its line and angle based on the ball’s speed and direction
+*   **Shot-Angle Coverage**: Dynamically maintains goal-covering positions to reduce the shooter’s available angles
+
+### **Consistency & Safety**
+Under pressure, the goalkeeper **prioritizes reliably neutralizing threats** and minimizing risk.
+*   **Decisive Clearing**: If a dangerous situation is detected, the goalkeeper clears the ball to a safe area.
+*   **Safe Clearing Approach**: For clearance, the goalkeeper approaches the ball safely using smooth, curved paths when needed.
+  
 ---
 
 ## System Architecture
