@@ -35,7 +35,7 @@ Rather than holding a fixed spot in front of the goal, the goalkeeper **optimize
 ### **Consistency & Safety**
 Under pressure, the goalkeeper **prioritizes reliably neutralizing threats** and minimizing risk.
 *   **Decisive Clearing**: If a dangerous situation is detected, the goalkeeper clears the ball to a safe area.
-*   **Safe Clearing Approach**: For clearance, the goalkeeper approaches the ball safely using smooth, curved paths when needed.
+*   **Safe Clearing Approach**: For clearance, the goalkeeper approaches the ball safely using curved paths when needed.
   
 ---
 
