@@ -1,4 +1,3 @@
-<img width="1061" height="682" alt="goalkeeper" src="https://github.com/user-attachments/assets/436b72b8-1729-40cf-bd29-e2f3230a36d4" /><div align="center">
 
 # :soccer: INHA GoalKeeper
 **Advanced Autonomous Agent for Humanoid Soccer**
