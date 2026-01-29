@@ -1,4 +1,4 @@
-<div align="center">
+<img width="1061" height="682" alt="goalkeeper" src="https://github.com/user-attachments/assets/436b72b8-1729-40cf-bd29-e2f3230a36d4" /><div align="center">
 
 # :soccer: INHA GoalKeeper
 **Advanced Autonomous Agent for Humanoid Soccer**
@@ -53,7 +53,7 @@ If the ball position is lost, the robot combines head rotation and body rotation
 
 The detailed system architecture is illustrated in the figure below.
 <p align="center">
-  <img src="images/goalkeeper.png" width="700" />
+  <img width="700" alt="goalkeeper" src="https://github.com/user-attachments/assets/bfe44bd2-ee73-400d-8f71-bbb564fad0b3" />
 </p>
 
 ---
