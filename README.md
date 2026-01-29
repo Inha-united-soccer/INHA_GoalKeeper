@@ -10,13 +10,12 @@
 
 *Cognitive Flexibility • Dynamic Positioning • Consistency and Safety*
 
----
-</div>
+</br>
 
-## Mission & Vision
 **"To create a soccer-playing intelligence that doesn't just calculate, but *understands* the flow of the game."**
 
 The **INHA GoalKeeper** is designed to bridge the gap between rigid robotic control and dynamic human intuition. By leveraging hierarchical behavior trees and advanced motion planning, our agent demonstrates adaptive gameplay—ball-trajectory prediction–based positioning, proactive blocking and saving in 1v1 situations, and safe clearing in high-risk areas.
+</div>
 
 ---
 
