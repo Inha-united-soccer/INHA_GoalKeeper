@@ -39,7 +39,7 @@ Under pressure, the goalkeeper **prioritizes reliably neutralizing threats** and
   
 ---
 
-## System Architecture
+## GoalKeeper Behavior Tree Overview
 
 The goalkeeper’s decision-making framework is composed of three high-level states: **Hold**, **Clearing**, and **Find**.
 
